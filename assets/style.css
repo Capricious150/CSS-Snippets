@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #13293d;
+    --codebox: #2f699e;
+    --text:var(--codebox);
+    --codeboxtext: white;
+}
+
+body {
+    background-color: var(--background);
+    color:var(--text);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    text-align:center;
+}
+
+h4 {
+    color: var(--codeboxtext);
+}
+
+main {
+    border: 3px black solid;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1%;
+    padding: 1%;
+    border: 5px dashed var(--codebox);
+    width: 30%;
+}
+
+.card h3 {
+    position: relative;
+    margin-top: -10%;
+    border: 3px solid var(--codeboxtext);
+    background-color: var(--codebox);
+    color: var(--codeboxtext);
+    border-radius: 5px;
+    line-height: 200%;
+}
+
+.codebar {
+    flex-grow: 1;
+    border: 3px solid var(--codeboxtext);
+    background-color:var(--codebox);
+    color: var(--codeboxtext);
+    padding: 1%;
+    padding-top: 3%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 5px white;
+}
+
+.codebar:hover {
+    box-shadow: 0 0 10px 5px white;
+}
+
